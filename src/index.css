@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #4A4E69;
+    background-color: #FAF9FF;
+  }
+
+  h1, h2, h3, h4, .font-serif-natural {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #22223B;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+/* Natural Tones Background Mesh */
+.bg-mesh-natural {
+  background-color: #FAF9FF;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(224, 195, 252, 0.35) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, rgba(253, 226, 228, 0.4) 0px, transparent 45%),
+    radial-gradient(at 50% 50%, rgba(230, 230, 250, 0.45) 0px, transparent 60%),
+    radial-gradient(at 85% 85%, rgba(216, 226, 220, 0.35) 0px, transparent 50%),
+    radial-gradient(at 15% 90%, rgba(226, 240, 203, 0.3) 0px, transparent 50%);
+}
+
+.paper-texture-natural {
+  background-color: #FFFDF7;
+  border-color: #F5F1E9;
+  background-image: radial-gradient(#ece6da 0.8px, transparent 0.8px);
+  background-size: 18px 18px;
+}
+
+/* Smooth candle flame animation */
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(-1deg); opacity: 0.95; }
+  25% { transform: scale(1.08, 0.95) rotate(2deg); opacity: 1; }
+  50% { transform: scale(0.96, 1.05) rotate(-2deg); opacity: 0.9; }
+  75% { transform: scale(1.04, 1) rotate(1deg); opacity: 0.98; }
+}
+
+.animate-flicker {
+  animation: flicker 1.8s infinite ease-in-out;
+}
+
+/* Floating animation */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+

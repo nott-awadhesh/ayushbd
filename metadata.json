@@ -1,0 +1,6 @@
+{
+  "name": "Ayush Gupta's Birthday Celebration",
+  "description": "An elegant, minimalist birthday website for Ayush Gupta featuring heartfelt wishes, a handwritten digital letter, and a memory gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
